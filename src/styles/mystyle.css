@@ -1,0 +1,52 @@
+/* @import url('./../fonts/Italiana-Regular.ttf'); */
+
+@font-face {
+  font-family: med;
+  src: url('./../fonts/Roboto/Roboto-Medium.ttf');
+}
+@font-face {
+  font-family: regular;
+  src: url('./../fonts/Roboto/Roboto-Regular.ttf');
+}
+@font-face {
+  font-family: Ital;
+  src: url('./../fonts/Italiana-Regular.ttf');
+}
+
+
+h1,h2 {font-family: Ital;}
+p{
+  font-family: med;
+}
+a{
+  text-decoration: none;
+}
+body, html {height: 100%}
+
+hr{
+  margin:auto;
+  width:40%
+}
+.custom_width{
+  width: 100%;
+}
+.home{
+  height: 100%;
+  margin: 0;
+}
+.header{
+  background-image: url('./../images/love.png');
+  background-position: center;
+  background-size: cover;
+}
+
+.cover {
+    background-image: url('./../images/sky.JPG');
+    min-height: 80vh;
+    background-position: center;
+    background-size: cover;
+  }
+
+  .menus{
+    font-family: regular;
+  }
