@@ -10,7 +10,7 @@ const Footer = () => {
         <a href="https://www.linkedin.com/in/mart%C3%ADn-carballo-flores-6448189a/" target="_blank"><i className="fa fa-linkedin w3-hover-opacity"></i></a>
       </div>
 
-      <p>Powered by &copy; 2024 <a href="https://sinople-lab.github.io/home" title="Sinople-lab" target="_blank" class="w3-hover-text-green">Sinople-lab</a></p>
+      <p>Powered by &copy; 2024 <a href="https://sinople-lab.github.io/home" title="Sinople-lab" target="_blank" className="w3-hover-text-green">Sinople-lab</a></p>
 
     </div>
   )
