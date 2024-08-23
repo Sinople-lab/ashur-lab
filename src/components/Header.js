@@ -25,22 +25,26 @@ const Header = () => {
         {
             id:11,
             title:'Landscapes',
-            parent:'Photography'
+            parent:'Photography',
+            link:'/'
         },
         {
             id:12,
             title:'Nature',
-            parent:'Photography'
+            parent:'Photography',
+            link:'/'
         },
         {
             id:13,
             title:'Fine Art',
-            parent: 'Photography'
+            parent: 'Photography',
+            link:'/'
         },
         {
             id:21,
             title:'Watercolor Painting',
-            parent:'Fine Art'
+            parent:'Fine Art',
+            link:'/'
         },
         {
             id:22,
@@ -50,32 +54,38 @@ const Header = () => {
         {
             id:31,
             title:'Video Games',
-            parent: 'Animations'
+            parent: 'Animations',
+            link:'/'
         },
         {
             id:32,
             title: '2D animations',
-            parent:'Animations'
+            parent:'Animations',
+            link:'/'
         },
         {
             id:33,
             title:'Math',
-            parent:'Animations'
+            parent:'Animations',
+            link:'/'
         },
         {
             id:41,
             title:'Graphic Design',
-            patent:'Web Design'
+            parent:'Web Design',
+            link:'/web-design'
         },
         {
             id:42,
             title:'Photography Portfolios',
-            parent:'Web Design'
+            parent:'Web Design',
+            link:'/'
         },
         {
             id:43,
             title:'Landing Page',
-            parent:'Web Design'
+            parent:'Web Design',
+            link:'/web-design'
         }
 
     ])
@@ -96,48 +106,14 @@ const Header = () => {
                 {categories.map((category)=>(
                     <div className="w3-dropdown-hover">
                         <button key={category.id} className="w3-button">{category.title}</button>
-                        <div className="w3-dropdown-content w3-bar-block w3-card-4" onMouseEnter={() => setHidden(false)}onMouseLeave={() => setHidden(true)} >
-                        {subcategories.map((child)=> (
-                            child.parent === category.title ? <a key={child.id} href="/" className="w3-bar-item w3-button">{child.title}</a> : "")
-                        )}
+                        <div className="w3-dropdown-content w3-bar-block w3-card-4" >
+                            {subcategories.map((child)=> (
+                                child.parent === category.title ? <a key={child.id} href={child.link} className="w3-bar-item w3-button">{child.title}</a> : "")
+                            )}
                         </div>
                     </div>
                 ))}
-                {/* <div className="w3-dropdown-hover">
-                    <button className="w3-button">Photography</button>
-                    <div className="w3-dropdown-content w3-bar-block w3-card-4">
-                        <a href="#" className="w3-bar-item w3-button">Landscapes</a>
-                        <a href="#" className="w3-bar-item w3-button">Nature</a>
-                        <a href="#" className="w3-bar-item w3-button">Fine Art</a>
-                    </div>
-                </div>
-
-                <div className="w3-dropdown-hover">
-                    <button className="w3-button">Fine art</button>
-                    <div className="w3-dropdown-content w3-bar-block w3-card-4">
-                        <a href="#" className="w3-bar-item w3-button">Watercolor Paintings</a>
-                        <a href="#" className="w3-bar-item w3-button">Drawing</a>
-                    </div>
-                </div>
-
-                <div className="w3-dropdown-hover">
-                    <button className="w3-button">Animations</button>
-                    <div className="w3-dropdown-content w3-bar-block w3-card-4">
-                        <a href="#" className="w3-bar-item w3-button">Video Games</a>
-                        <a href="#" className="w3-bar-item w3-button">2D animations</a>
-                        <a href="#" className="w3-bar-item w3-button">Math</a>
-                    </div> 
-                </div>
-
-                <div className="w3-dropdown-hover">
-                    <button className="w3-button">Web Design</button>
-                    <div className="w3-dropdown-content w3-bar-block w3-card-4">
-                        <a href="#" className="w3-bar-item w3-button">Graphic Design</a>
-                        <a href="#" className="w3-bar-item w3-button">Photography Portfolios</a>
-                        <Link to="/web-design" className="w3-bar-item w3-button">Web Design</Link>
-                    </div>
-                </div> */}
-            </div>    
+            </div>
         </div>
     )
 }
