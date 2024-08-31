@@ -15,9 +15,9 @@ const WebDesign = () => {
   return (
     <div>
         <Header />
-        <div className="w3-conteiner w3-black w3-container w3-padding-64" id="web-design">
-            <h3 className="w3-center">MY WORK</h3>
-            <p className="w3-center"><em>Here are some of my latest projects.<br/></em></p><br/>
+        <div className="w3-container w3-black w3-padding-64" id="web-design">
+            <h3 className="w3-center">Landing Page Designs</h3>
+            <p className="w3-center"><em>Clic on an image to visit the page.<br/></em></p><br/>
 
             {/* <!-- Responsive Grid. Four columns on tablets, laptops and desktops. Will stack on mobile devices/small screens (100% width) --> */}
             <div className="w3-row-padding w3-center">
