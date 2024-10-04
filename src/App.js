@@ -6,7 +6,7 @@ import Home from './pages/Home'
 import NotFound from './pages/NotFound';
 import WebDesign from './pages/WebDesign';
 
-import './styles/W3Style.css';
+import './styles/style.css';
 import './styles/mystyle.css'
 
 const router = createBrowserRouter([

@@ -91,7 +91,7 @@ const Header = () => {
     ])
     
     return (
-        <div id='home' className="w3-container w3-blue-gray header">
+        <div id='home' className="container blue-gray header">
             
             <h1><Link to="/" >My Art Studio </Link></h1>
             <p> 
@@ -100,15 +100,15 @@ const Header = () => {
             </p>
         
             {/* Nav bar */}
-            <div className="w3-bar w3-light-grey menus">
-                <a href="https://sinople-lab.github.io/home" target="_self" className="w3-bar-item w3-button">About Me</a>
+            <div className="bar light-grey menus">
+                <a href="https://sinople-lab.github.io/home" target="_self" className="bar-item button">About Me</a>
 
                 {categories.map((category)=>(
-                    <div className="w3-dropdown-hover">
-                        <button key={category.id} className="w3-button">{category.title}</button>
-                        <div className="w3-dropdown-content w3-bar-block w3-card-4" >
+                    <div className="dropdown-hover">
+                        <button key={category.id} className="button">{category.title}</button>
+                        <div className="dropdown-content bar-block card-4" >
                             {subcategories.map((child)=> (
-                                child.parent === category.title ? <a key={child.id} href={child.link} className="w3-bar-item w3-button">{child.title}</a> : "")
+                                child.parent === category.title ? <a key={child.id} href={child.link} className="bar-item button">{child.title}</a> : "")
                             )}
                         </div>
                     </div>

@@ -15,44 +15,44 @@ const WebDesign = () => {
   return (
     <div>
         <Header />
-        <div className="w3-container w3-black w3-padding-64" id="web-design">
-            <h3 className="w3-center">Landing Page Designs</h3>
-            <p className="w3-center"><em>Clic on an image to visit the page.<br/></em></p><br/>
+        <div className="container black padding-64" id="web-design">
+            <h3 className="center">Landing Page Designs</h3>
+            <p className="center"><em>Clic on an image to visit the page.<br/></em></p><br/>
 
             {/* <!-- Responsive Grid. Four columns on tablets, laptops and desktops. Will stack on mobile devices/small screens (100% width) --> */}
-            <div className="w3-row-padding w3-center">
-                <div className="w3-col m3">
-                <a href='https://sinople.itch.io'><img src={gameshop} style={{width:"100%"}} onclick="onClick(this)" class="w3-hover-opacity" alt="Games eShop"/></a>
+            <div className="row-padding center">
+                <div className="col m3">
+                <a href='https://sinople.itch.io'><img src={gameshop} style={{width:"100%"}} class="hover-opacity" alt="Games eShop"/></a>
                 </div>
 
-                <div className="w3-col m3">
-                <a href='https://slnople.wordpress.com/sinople/' target='_self'><img src={hero} style={{width:"100%"}} onclick="onClick(this)" class="w3-hover-opacity" alt="Web design Agency"/></a>
+                <div className="col m3">
+                <a href='https://slnople.wordpress.com/sinople/' target='_self'><img src={hero} style={{width:"100%"}} class="hover-opacity" alt="Web design Agency"/></a>
                 </div>
 
-                <div className="w3-col m3">
-                <a href='https://Sinople-lab.github.io/home'><img src={roott} style={{width:"100%"}} onclick="onClick(this)" class="w3-hover-opacity" alt="CSS animation for my Home page"/></a>
+                <div className="col m3">
+                <a href='https://Sinople-lab.github.io/home'><img src={roott} style={{width:"100%"}} class="hover-opacity" alt="CSS animation for my Home page"/></a>
                 </div>
 
-                <div className="w3-col m3">
-                <Link to='/'><img src={ArtCorner} style={{width:"100%"}} onclick="onClick(this)" class="w3-hover-opacity" alt="Creative Repository Page"/></Link>
+                <div className="col m3">
+                <Link to='/'><img src={ArtCorner} style={{width:"100%"}} class="hover-opacity" alt="Creative Repository Page"/></Link>
                 </div>
             </div>
 
-            <div className="w3-row-padding w3-center w3-section">
-                <div className="w3-col m3">
-                <a href='https://Sinople-lab.github.io/home'><img src={landing1} style={{width:"100%"}} onclick="onClick(this)" class="w3-hover-opacity" alt="JS Animation for my Hero section"/></a>
+            <div className="row-padding center section">
+                <div className="col m3">
+                <a href='https://Sinople-lab.github.io/home'><img src={landing1} style={{width:"100%"}} class="hover-opacity" alt="JS Animation for my Hero section"/></a>
                 </div>
 
-                <div className="w3-col m3">
-                <a href='https://sinople-lab.github.io/homework/'><img src={form} style={{width:"100%"}} onclick="onClick(this)" class="w3-hover-opacity" alt="Sign up form for clients projects"/></a>
+                <div className="col m3">
+                <a href='https://sinople-lab.github.io/homework/'><img src={form} style={{width:"100%"}} class="hover-opacity" alt="Sign up form for clients projects"/></a>
                 </div>
 
-                <div className="w3-col m3">
-                <a href='https://sinople.itch.io/sinoplerunner'><img src="https://img.itch.zone/aW1hZ2UvMTExNjMyMS8xMzM5MDIzOC5wbmc=/original/cUJKua.png" style={{width:"100%"}} onclick="onClick(this)" class="w3-hover-opacity" alt="2D Racing Game Design"/></a>
+                <div className="col m3">
+                <a href='https://sinople.itch.io/sinoplerunner'><img src="https://img.itch.zone/aW1hZ2UvMTExNjMyMS8xMzM5MDIzOC5wbmc=/original/cUJKua.png" style={{width:"100%"}} class="hover-opacity" alt="2D Racing Game Design"/></a>
                 </div>
 
-                <div className="w3-col m3">
-                <a href='https://www.behance.net/gallery/192524891/Coming-Soon'><img src={Coming} style={{width:"100%"}} onclick="onClick(this)" class="w3-hover-opacity" alt="Coming Soon Page concept"/></a>
+                <div className="col m3">
+                <a href='https://www.behance.net/gallery/192524891/Coming-Soon'><img src={Coming} style={{width:"100%"}} class="hover-opacity" alt="Coming Soon Page concept"/></a>
                 </div>
             </div>
         </div>
