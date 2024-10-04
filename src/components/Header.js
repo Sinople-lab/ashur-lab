@@ -2,7 +2,7 @@ import { useState } from "react"
 import { Link } from "react-router-dom"
 
 const Header = () => {
-    const [hidden, setHidden] = useState(true);
+    // const [hidden, setHidden] = useState(true);
     const [categories, setCategories] = useState([
         {
             id:1,
